@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+///
+            //////////arrays
+
+            var fruits = ["APPLE","MANGO","ORANGE","PINEAPPLE","KIWI"];
+            document.write(`<h2>${fruits}</h2>`);
+
+
+            var cars = ["FERRARI","BMW","LAMBORGHINI","PORSCHE"];
+            document.write(`<h2>${cars[0]}</h2>`);
+            document.write(`<h2>${cars[1]}</h2>`);
+            document.write(`<h2>${cars[2]}</h2>`);
+            document.write(`<h2>${cars[3]}</h2>`);
+
+            var student = {
+                name:"Ali",
+                age: "21",
+                male:"true",
+                job:"null",
+                weight:"60.5",
+            };
+
+            document.write(`<h2>${student.name}</h2>`);
+            document.write(`<h2>${student.age}</h2>`);
+
+
+
+
+
+
+
+
+
+
+            var age = 17;
+            var edu = "inter";
+
+            var age = parseInt(prompt("Enter your age?"));
+            var edu = prompt("Enter your eduation?");
+
+             if(age >=18)
+
+             {
+                document.write(`<h2>you are ${age} years old so you are eligible,</h2>`);
+             }
+
+             else if (edu == "inter")
+
+             {
+                document.write(`<h2>your education is ${edu}so you are eligible</h2>`);
+             }
+
+             else{
+                document.write(`<h2>you are ${age} years old so you are not eligible</h2>`);
+             }
+    </script>
+</body>
+</html>

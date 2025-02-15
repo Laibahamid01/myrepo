@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 5px solid black;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .main input,
+        select,
+        label {
+            font-size: 16px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Registration Form</h1>
+        <div class="main">
+            <label>Name</label>
+            <input type="Text" id="uName" placeholder="Entre name here">
+            <br>
+            <label>Phone</label>
+            <input type="number" id="uPhone" placeholder="Entre number here">
+            <br>
+            <label>Email</label>
+            <input type="email" id="uEmail" placeholder="Entre email here">
+            <br>
+            <label>Pass</label>
+            <input type="password" id="uPass" placeholder="Entre password here">
+            <br>
+            <label>Date of birth</label>
+            <input type="date" id="uDob">
+            <br>
+            <label>Country</label>
+            <select id="uCountry">
+                <option selected disabled>-------Select------</option>
+                <option>Pakistan</option>
+                <option>India</option>
+                <option>Germany</option>
+                <option>America</option>
+            </select>
+            <br>
+            <br>
+            <button onclick="myform()">submit</button>
+        </div>
+
+        <h2 id="resName"></h2>
+        <h2 id="resPhone"></h2>
+        <h2 id="resEmail"></h2>
+        <h2 id="resPass"></h2>
+        <h2 id="resDob"></h2>
+        <h2 id="resCountry"></h2>
+
+    </center>
+</body>
+
+<script>
+    function myform() {
+        var uName = document.getElementById('uName').value;
+        var uPhone = document.getElementById('uPhone').value;
+        var uEmail = document.getElementById('uEmail').value;
+        var uPass = document.getElementById('uPass').value;
+        var uDob = document.getElementById('uDob').value;
+        var uCountry = document.getElementById('uCountry').value;
+
+
+        document.getElementById('resName').innerHTML = "Name : " + uName;
+        document.getElementById('resPhone').innerHTML = "Phone : " + uPhone;
+        document.getElementById('resEmail').innerHTML = "Email : " + uEmail;
+        document.getElementById('resPass').innerHTML = "Pass : " + uPass;
+        document.getElementById('resDob').innerHTML = "Dob : " + uDob;
+        document.getElementById('resCountry').innerHTML = "Country : " + uCountry;
+
+
+
+
+
+        document.getElementById('uName').value = "";
+        document.getElementById('uPhone').value = "";
+        document.getElementById('uEmail').value = "";
+        document.getElementById('uPass').value = "";
+        document.getElementById('uDob').value = "";
+        document.getElementById('uCountry').value = "";
+    }
+
+
+
+</script>
+
+</html>

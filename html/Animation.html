@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            background-color: blue;
+            animation-name: MyAnimation;
+            animation-duration: 4s;
+
+        }-
+
+        @keyframes MyAnimation{
+            0%{
+                background-color: aquamarine;
+                margin-top: 0;
+                margin-left: 0;
+            }
+
+            25%{
+                background-color: orchid;
+                margin-top: 0;
+                margin-left:300px;
+                transform:scale(1.3)
+            }
+
+            50%{
+                background-color: palegreen;
+                margin-top: 300px;
+                margin-left: 300px;
+            }
+
+            75%{
+                background-color: brown;
+                margin-top: 300px;
+                margin-left: 0;
+                transform: rotate(300deg);
+            }
+
+            100%{
+                background-color: red;
+                margin-top: 0;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
